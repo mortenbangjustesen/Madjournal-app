@@ -1,0 +1,214 @@
+/* Linear gradient mixin */
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fafafa url(../img/bg.png) center center no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 60px;
+  /*Extra space for the fixed footer*/
+
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "futura-pt", sans-serif;
+}
+a {
+  color: #000000;
+}
+h1 {
+  color: #4c247c;
+  text-align: center;
+  font-weight: normal;
+  font-size: 180%;
+}
+h2 {
+  color: #949494;
+  text-align: center;
+  font-weight: normal;
+  font-size: 120%;
+}
+h3 {
+  color: #4c247c;
+  text-align: center;
+  font-weight: normal;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  color: #949494;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 10px;
+}
+header small {
+  display: block;
+  font-size: 70%;
+}
+header .backbutton {
+  border: 1px solid #949494;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  padding: 3px 10px 3px 3px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+footer {
+  border-top: 1px solid #4c247c;
+  background: -webkit-linear-gradient(top, #7035b7, #4c247c);
+  background: -moz-linear-gradient(top, #7035b7, #4c247c);
+  background: -o-linear-gradient(top, #7035b7, #4c247c);
+  background: -ms-linear-gradient(top, #7035b7, #4c247c);
+  background: linear-gradient(top, #7035b7, #4c247c);
+}
+footer h2 {
+  color: #ffffff;
+  text-shadow: 0 -1px -1px #341954;
+}
+footer .icon {
+  margin-top: 5px;
+  margin-left: 6px;
+}
+.content {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.searchfield-wrapper {
+  margin-top: 10px;
+  background: #eaeaea;
+  padding: 7px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.searchfield-wrapper .searchfield {
+  border: 2px solid #4c247c;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  height: 30px;
+  background: #ffffff;
+  text-align: left;
+}
+.searchfield-wrapper .searchfield .icon {
+  margin: 8px;
+}
+.searchfield-wrapper .searchfield input[type="text"] {
+  height: 30px;
+  width: 85%;
+  border: none;
+}
+.searchfield-wrapper .searchfield input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.lookups {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.lookups a {
+  padding: 0px;
+  display: block;
+  color: #4c247c;
+}
+.distination-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.distination-list li {
+  position: relative;
+}
+.distination-list li .number {
+  float: left;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  margin-top: 4px;
+  margin-right: 4px;
+  border: 1px solid #949494;
+  padding: 5px 10px;
+  display: block;
+  height: auto;
+}
+.distination-list li h3 {
+  text-align: left;
+}
+.distination-list li h3 small {
+  display: block;
+  margin-left: 35px;
+  margin-top: -10px;
+}
+.distination-list li .pin {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.distination-list li .pin.pin-active {
+  background: #4c247c;
+  color: #ffffff;
+}
+.shadow-down:after {
+  -webkit-box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.25);
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  -moz-mask-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  height: 10px;
+  width: 100%;
+  position: relative;
+  content: '';
+  bottom: -1px;
+  left: 0;
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.shadow-up:after {
+  -webkit-box-shadow: inset 0 -15px 15px -15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.3);
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  -moz-mask-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  height: 10px;
+  width: 100%;
+  position: relative;
+  content: '';
+  bottom: -1px;
+  left: 0;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-left {
+  margin-left: 10px;
+}
+.margin-right {
+  margin-right: 10px;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
